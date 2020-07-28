@@ -5,7 +5,9 @@ import random
 # cold/flu - head/face
 # headache - head/face
 # mononucleosis - head/face
+# ear infection - head/face
 # stomach ache - body
+# acute bronchitis - body/chest
 # fever
 # hypothermia - temperature
 # fever - temperature
