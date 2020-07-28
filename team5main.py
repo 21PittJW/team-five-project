@@ -3,7 +3,7 @@ import random
 #to add:
 # allergies - head/face
 # pink eye - head/face
-# cold
+# cold - head/face
 # flu - head/face
 # headache - head/face
 # sinus infection - head/face
