@@ -6,7 +6,10 @@ import random
 # headache - head/face
 # mononucleosis - head/face
 # stomach ache - body
-#
+# fever
+# hypothermia - temperature
+# fever - temperature
+# hyperpyrexia - temperature
 
 def getTemp():
     #arduino temp module
