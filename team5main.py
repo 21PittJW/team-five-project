@@ -1,5 +1,13 @@
 import random
 
+#to add:
+# allergies - head/face
+# cold/flu - head/face
+# headache - head/face
+# mononucleosis - head/face
+# stomach ache - body
+#
+
 def getTemp():
     #arduino temp module
 
