@@ -1,4 +1,10 @@
 import random
 
-# code goes here
-# test
+def getTemp():
+    #arduino temp module
+
+#user inputs here
+
+#if loop tree here
+
+#output here
