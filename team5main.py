@@ -2,8 +2,10 @@ import random
 
 #to add:
 # allergies - head/face
+# pink eye - head/face
 # cold/flu - head/face
 # headache - head/face
+# sinus infection - head/face
 # mononucleosis - head/face
 # ear infection - head/face
 # stomach ache - body
