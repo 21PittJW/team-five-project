@@ -11,7 +11,7 @@ import random
 # ear infection - head/face
 # stomach ache - body
 # acute bronchitis - body/chest
-# fever
+# fever - temperature
 # hypothermia - temperature
 # fever - temperature
 # hyperpyrexia - temperature
