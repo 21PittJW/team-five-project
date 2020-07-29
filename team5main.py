@@ -11,12 +11,7 @@ import random
 # ear infection - head/face
 # stomach ache - body
 # acute bronchitis - body/chest
-<<<<<<< HEAD
-# coronavirus - body/respiratory system
 # fever
-=======
-# fever - temperature
->>>>>>> d9ddaf33412e6fb08c9869e989fa5167673c5878
 # hypothermia - temperature
 # fever - temperature
 # hyperpyrexia - temperature
