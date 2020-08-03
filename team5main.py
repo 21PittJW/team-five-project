@@ -13,7 +13,6 @@ import random
 # acute bronchitis - body/chest
 # fever - temperature
 # hypothermia - temperature
-# fever - temperature
 # hyperpyrexia - temperature
 
 def getTemp():
