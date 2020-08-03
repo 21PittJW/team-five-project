@@ -1,4 +1,22 @@
-import random
+from tkinter import *
+from tkinter import ttk
+
+root = Tk()
+root.title("Med Software V0.0")
+
+print("v 0.0")
+
+#sets up the window to put buttons, text etc. in
+mainframe = ttk.Frame(root, padding="3 3 12 12")
+mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+root.columnconfigure(0, weight=1)
+root.rowconfigure(0, weight=1)
+
+#code for creating a button
+ttk.Button(root, text="start").grid()
+
+root.mainloop()
+
 
 #to add:
 # allergies - head/face
@@ -16,7 +34,7 @@ import random
 # hypothermia - temperature
 # hyperpyrexia - temperature
 
-def getTemp():
+#def getTemp():
     #arduino temp module
 
 #user inputs here
