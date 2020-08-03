@@ -12,6 +12,7 @@ import random
 # stomach ache - body
 # acute bronchitis - body/chest
 # coronavirus - body/lungs
+# tuberculosis - body/lungs
 # fever - temperature
 # hypothermia - temperature
 # hyperpyrexia - temperature
