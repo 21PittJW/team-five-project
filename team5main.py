@@ -31,7 +31,7 @@ root.mainloop()
 # acute bronchitis - body/chest
 # coronavirus - body/lungs
 # tuberculosis - body/lungs
-# fever - temperature
+# rheumatoid arthritis - joints temperature
 # hypothermia - temperature
 # hyperpyrexia - temperature
 
