@@ -1,26 +1,31 @@
-from tkinter import *
-from tkinter import ttk
+#from tkinter import *
+#from tkinter import ttk
 
-root = Tk()
-root.title("Med Software V0.0")
+#root = Tk()
+#root.title("Med Software V0.0")
 
-print("v 0.0")
+#def buttondel():
+#    button1.remove()
+#    return
+
+#print("v 0.0")
 
 #sets up the window to put buttons, text etc. in
-mainframe = ttk.Frame(root, padding="3 3 12 12")
-mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
-root.columnconfigure(0, weight=1)
-root.rowconfigure(0, weight=1)
+#mainframe = ttk.Frame(root, padding="3 3 12 12")
+#mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+#root.columnconfigure(0, weight=1)
+#root.rowconfigure(0, weight=1)
 
 #code for creating a button
-ttk.Button(root, text="start").grid()
+#button1 = ttk.Button(root, text="click here to throw an error", command = buttondel).grid()
 
 #label test
-texttest = "text"
-label1 = ttk.Label(mainframe, text="test")
-label1.grid(column=2, row=2)
+#label1 = ttk.Label(mainframe, text="Team 5 Medical Software").grid(column=2, row=2)
 
-root.mainloop()
+#root.mainloop()
+
+# !! ditched tk gui code, not working properly. will fix if time allows.
+
 
 
 #to add:
