@@ -26,7 +26,7 @@
 
 # !! ditched tk gui code, not working properly. will fix if time allows.
 
-temperature = 36.443
+temperature = 37.6
 temperature = round(temperature, 1)
 print(temperature)
 #this can be changed as needed for debugging
@@ -59,17 +59,17 @@ elif(temperature > 37.5 and temperature < 40):
     elif ans1.lower() == "no":
         ans6 = input("Do you frequently sneeze?")
         if ans6.lower() == "yes":
-            ans7 = input("Is your face more sensittive to touch?")
+            ans7 = input("Is your face sensitive to touch?")
             if ans7.lower() == "yes":
                 print("You most likely have a Sinus Infection")
+            elif ans7.lower() == "no":
+                print("You most likely have the Common Cold")
         elif ans6.lower() == "no":
             ans8 = input("Do you get chills or shivers occasionally?")
             if ans8.lower() == "yes":
                 print("You most likely have TB")
             elif ans8.lower() == "no":
                 print("You most likely have Coronavirus")
-            elif ans7.lower() == "no":
-                print("You most likely have the Common Cold")
  
 elif(temperature >= 40):
     print("hyperpyrexia")
