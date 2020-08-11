@@ -26,6 +26,19 @@
 
 # !! ditched tk gui code, not working properly. will fix if time allows.
 
+temperature = 36.443
+temperature = round(temperature, 1)
+print(temperature)
+#this can be changed as needed for debugging
+
+if(temperature <= 35):
+    print("hypothermia")
+elif(temperature >= 36.5 and temperature <= 37.5):
+    print("normal, no fever")
+elif(temperature > 37.5 and temperature < 40):
+    print("fever")
+elif(temperature >= 40):
+    print("hyperpyrexia")
 
 
 #to add:
