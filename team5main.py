@@ -44,6 +44,12 @@ elif(temperature > 37.5 and temperature < 40):
             ans3 = input("Do you expereince a sharp pain in your ear followed by a discharge of liquid? ")
             if ans3.lower() == "yes":
                 print("You most likely have an Ear Infection")
+    elif ans1.lower() == "no":
+        ans2 = input("Do you frequently sneeze?")
+        if ans2.lower() == "yes":
+            ans3 = input("Is your face more sensittive to touch?")
+            if ans3.lower == "yes":
+                print("You most likely have a Sinus Infection")
  
 elif(temperature >= 40):
     print("hyperpyrexia")
