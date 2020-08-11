@@ -1,0 +1,4 @@
+this version:
++ expanded if tree
++ added temperature checks
+- removed faulty gui 
