@@ -44,12 +44,18 @@ elif(temperature > 37.5 and temperature < 40):
             ans3 = input("Do you expereince a sharp pain in your ear followed by a discharge of liquid? ")
             if ans3.lower() == "yes":
                 print("You most likely have an Ear Infection")
-        elif ans3.lower() == "no":
-            ans3 = input("Do you have a sore throat?")
-            if ans3.lower() == "yes":
-                ans4 = input("Do you have rashes around your body?")
-                if ans4.lower() == "yes":
+            elif ans3.lower() == "no":
+                print("Check your temperature again, you might have Heatstroke or Hypothermia")
+        elif ans2.lower() == "no":
+            ans4 = input("Do you have a sore throat?")
+            if ans4.lower() == "yes":
+                ans5 = input("Do you have rashes around your body?")
+                if ans5.lower() == "yes":
                     print("You most likely have Mononucleosis")
+                elif ans5.lower() == "no":
+                    print("You most likely have the Flu")
+            elif ans4.lower() == "no":
+                print("You most likely have Rheumatoid Arthritis")
     elif ans1.lower() == "no":
         ans2 = input("Do you frequently sneeze?")
         if ans2.lower() == "yes":
