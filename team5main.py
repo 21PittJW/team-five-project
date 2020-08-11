@@ -15,6 +15,11 @@ root.rowconfigure(0, weight=1)
 #code for creating a button
 ttk.Button(root, text="start").grid()
 
+#label test
+texttest = "text"
+label1 = ttk.Label(mainframe, text="test")
+label1.grid(column=2, row=2)
+
 root.mainloop()
 
 
