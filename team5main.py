@@ -37,6 +37,14 @@ elif(temperature >= 36.5 and temperature <= 37.5):
     print("normal, no fever")
 elif(temperature > 37.5 and temperature < 40):
     print("fever")
+    ans1 = input("Do you experience pain/aches in your ears, muscles or joints? ")
+    if ans1.lower() == "yes":
+        ans2 = input("Do you occasionally feel nauseous? ")
+        if ans2.lower() == "yes":
+            ans3 = input("Do you expereince a sharp pain in your ear followed by a discharge of liquid? ")
+            if ans3.lower() == "yes":
+                print("You most likely have an Ear Infection")
+ 
 elif(temperature >= 40):
     print("hyperpyrexia")
 
