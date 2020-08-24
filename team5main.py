@@ -25,11 +25,10 @@
 #root.mainloop()
 
 # !! ditched tk gui code, not working properly. will fix if time allows.
-def H(H,W):
+def BMI(H,W):
   return(W/H)
 H = float(input("Enter your Height in M: "))
 W = float(input("Enter your Weight in KG: "))
- 
 if (W/H**2)<18.5:
   print("you are overweight")
 elif (W/H**2)>18.5 and (W/H**2)<25:
@@ -38,9 +37,15 @@ elif (W/H**2)>25 and (W/H**2)<30:
   print("you are overweight")
 elif (W/H**2)>30:
   print("you are obese")
+
+
+start = input("Do you want do ther diagnosis? If so press i /n If you want to use the BMI calcualtor, press k")
+if start == "k":
+  BMI(H,W)  
+elif start == "i":
 temperature = 37.6
 temperature = round(temperature, 1)
-print(temperature)
+  print(temperature)
 #this can be changed as needed for debugging
 
 if(temperature <= 35):
