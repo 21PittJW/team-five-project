@@ -25,7 +25,19 @@
 #root.mainloop()
 
 # !! ditched tk gui code, not working properly. will fix if time allows.
-
+def H(H,W):
+  return(W/H)
+H = float(input("Enter your Height in M: "))
+W = float(input("Enter your Weight in KG: "))
+ 
+if (W/H**2)<18.5:
+  print("you are overweight")
+elif (W/H**2)>18.5 and (W/H**2)<25:
+  print("you are normal")
+elif (W/H**2)>25 and (W/H**2)<30:
+  print("you are overweight")
+elif (W/H**2)>30:
+  print("you are obese")
 temperature = 37.6
 temperature = round(temperature, 1)
 print(temperature)
