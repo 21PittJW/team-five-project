@@ -74,21 +74,21 @@ elif(temperature > 37.5 and temperature < 40):
                 elif ans5.lower() == "no":
                     print("You most likely have the Flu.\n Common symptoms include fever, chills, muscle aches, cough, congestion, runny nose, headaches and fatigue.\n Primarily treated with rest and fluid, over-the-counter anti-inflammatory pain relievers may help with symptoms.")
             elif ans4.lower() == "no":
-                print("You most likely have Rheumatoid Arthritis")
+                print("You most likely have Rheumatoid Arthritis.\n Symptoms include warm, swollen and painful joints, pain and stiffness often worsen after rest. Commonly the wrist and hand are involved.\n Treatments include DMARDs, which are Disease-modifying antiheumatic drugs that can slow the progression of rheumatoid arthritis.")
     elif ans1.lower() == "no":
         ans6 = input("Do you frequently sneeze?")
         if ans6.lower() == "yes":
             ans7 = input("Is your face sensitive to touch?")
             if ans7.lower() == "yes":
-                print("You most likely have a Sinus Infection")
+                print("You most likely have a Sinus Infection.\n Common symptoms include headache, facial pain, runny nose, and nasal congestion.\n It is not very serious and therefore does not require much treatment other than symptomatic releif with pain medication, nasal decongestants and nasal saline rinses.")
             elif ans7.lower() == "no":
-                print("You most likely have the Common Cold")
+                print("You most likely have the Common Cold.\n Generally harmless, common symptoms include runny nose, sneezing and congestion.\n Most recover on their own within 2 weeks, if symptoms persist or there are signs of serious symptoms such as a high fever, go see a doctor, especially if they are a child.")
         elif ans6.lower() == "no":
             ans8 = input("Do you get chills or shivers occasionally?")
             if ans8.lower() == "yes":
-                print("You most likely have TB")
+                print("You most likely have TB.\n Can spread when an infected person coughs or sneezes.\n Symptoms do not occur immediately, symptoms include a cough (sometimes blood-tinged), weight loss, night sweats and fever.\n If you suspect you have TB, go see a doctor to aquire swift medical assistance.")
             elif ans8.lower() == "no":
-                print("You most likely have Coronavirus")
+                print("You most likely have Coronavirus.\n Most people with Covid will experience mild to moderate symptoms, these include fever, dry cough, tiredness.\n Most people who have Covid will recover without special treatment. However it is heavily advised that you get tested as soon as possible and follow the governments decision.")
  
 elif(temperature >= 40):
     print("hyperpyrexia")
