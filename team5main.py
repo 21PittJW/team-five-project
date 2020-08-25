@@ -62,7 +62,7 @@ elif(temperature > 37.5 and temperature < 40):
         if ans2.lower() == "yes":
             ans3 = input("Do you expereince a sharp pain in your ear followed by a discharge of liquid? ")
             if ans3.lower() == "yes":
-                print("You most likely have an Ear Infection")
+                print("You most likely have an Ear Infection.\n Common symptoms are ear pain and a fever, less commonly there may be drainage of fluid from the ear or hearing loss.\n Most Ear infections go away naturally, if not antibiotics may help.")
             elif ans3.lower() == "no":
                 print("Check your temperature again, you might have Heatstroke or Hypothermia")
         elif ans2.lower() == "no":
@@ -70,9 +70,9 @@ elif(temperature > 37.5 and temperature < 40):
             if ans4.lower() == "yes":
                 ans5 = input("Do you have rashes around your body?")
                 if ans5.lower() == "yes":
-                    print("You most likely have Mononucleosis")
+                    print("You most likely have Mononucleosis aka Glandular fever.\n Mononucleosis is transfered via saliva, common symptoms include fatigue, fever, sore throat, rash and swollen glands.\n Treatment includes rest, fluids and over-the-counter pain and fever-reducing medicines.")
                 elif ans5.lower() == "no":
-                    print("You most likely have the Flu")
+                    print("You most likely have the Flu.\n Common symptoms include fever, chills, muscle aches, cough, congestion, runny nose, headaches and fatigue.\n Primarily treated with rest and fluid, over-the-counter anti-inflammatory pain relievers may help with symptoms.")
             elif ans4.lower() == "no":
                 print("You most likely have Rheumatoid Arthritis")
     elif ans1.lower() == "no":
