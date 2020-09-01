@@ -1,5 +1,6 @@
 #from tkinter import *
 #from tkinter import ttk
+import serial
 
 #root = Tk()
 #root.title("Med Software V0.0")
@@ -26,6 +27,8 @@
 
 # !! ditched tk gui code, not working properly. will fix if time allows.
 
+temperature = serial.Serial('com6',9600)
+# change COM port as needed
 
 start = input("Do you want do ther diagnosis? If so press i If you want to use the BMI calcualtor, press k")
 if start == "k":
