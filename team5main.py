@@ -40,7 +40,7 @@ if start == "k":
   elif (W/H**2)>30:
     print("you are obese")
 elif start == "i":
-  temperature = 37.6
+  temperature = 37
   temperature = round(temperature, 1)
   print(temperature)
 #this can be changed as needed for debugging
@@ -48,6 +48,19 @@ elif start == "i":
     print("hypothermia")
   elif(temperature >= 36.5 and temperature <= 37.5):
     print("normal, no fever")
+    ans1 = input("Do you feel fatigued or nauseous? ")
+    if ans1.lower() == "yes":
+      ans2 = input("Do you have frequent abdominal pains? ")
+      if ans2.lower() == "yes":
+        print("You most likely have Food Poisoning. \n Common symptoms include abdominal pain, diarrhea, vomiting, nausea, headaches and weakness. \n Most food poisoning is mild and resolves without treatment. Ensure you are hydrated.")
+      elif ans2.lower() == "no":
+        print("You most likely have Bronchitis. \n Common symptoms include coughing, runny nose, fatigue, shortness of breath, slight chills and chest discomfort. \n Soothing remedies for coughs can help with treatment, though it will mostly go away by itself in a few weeks time.")
+    elif ans1.lower() == "no":
+      ans3 = input("Do you have hives or a swollen lip, tongue or face? ")
+      if ans3.lower() == "yes":
+        print("You most likely have food allergies. \n Common symptom include, stomach aches, wheezing, tightness of chest, hives and a swollen body. \n Use antihistamine drugs against mild reactions, severe reactions require an epipen as well as hospital care as soon as possible.")
+      elif ans3.lower() == "no":
+        print("You most likely have Pink Eye/Conjunctivitis. Common symptoms include, a red/pink eye, increased tear production, itchy eyes and discharge or crusting of the eyes. \n Most of the time, it will go away on its own. If you wear contacts, stop for a small period of time as this will slow recovery.")
   elif(temperature > 37.5 and temperature < 40):
     print("fever")
     ans1 = input("Do you experience pain/aches in your ears, muscles or joints? ")
