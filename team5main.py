@@ -25,10 +25,10 @@
 #root.mainloop()
 
 # !! ditched tk gui code, not working properly. will fix if time allows.
-H = 1
-W = 1
-def BMI(H,W):
-  return(W/H)
+
+
+start = input("Do you want do ther diagnosis? If so press i If you want to use the BMI calcualtor, press k")
+if start == "k":
   H = float(input("Enter your Height in M: "))
   W = float(input("Enter your Weight in KG: "))
   if (W/H**2)<18.5:
@@ -39,22 +39,16 @@ def BMI(H,W):
     print("you are overweight")
   elif (W/H**2)>30:
     print("you are obese")
-
-
-start = input("Do you want do ther diagnosis? If so press i If you want to use the BMI calcualtor, press k")
-if start == "k":
-  BMI(H,W) 
 elif start == "i":
   temperature = 37.6
-temperature = round(temperature, 1)
-print(temperature)
+  temperature = round(temperature, 1)
+  print(temperature)
 #this can be changed as needed for debugging
-
-if(temperature <= 35):
+  if(temperature <= 35):
     print("hypothermia")
-elif(temperature >= 36.5 and temperature <= 37.5):
+  elif(temperature >= 36.5 and temperature <= 37.5):
     print("normal, no fever")
-elif(temperature > 37.5 and temperature < 40):
+  elif(temperature > 37.5 and temperature < 40):
     print("fever")
     ans1 = input("Do you experience pain/aches in your ears, muscles or joints? ")
     if ans1.lower() == "yes":
