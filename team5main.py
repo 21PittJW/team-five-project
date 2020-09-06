@@ -1,5 +1,6 @@
 #from tkinter import *
 #from tkinter import ttk
+#A module that encapsulates the access to the serial port which allows us to use the arduino.
 import serial
 
 #root = Tk()
@@ -31,6 +32,7 @@ import serial
 # temperature = serial.Serial('com6',9600)
 # change COM port as needed
 
+#start, pick which option the user wants. I for the diagnosis and k for a BMI calculator.
 start = input("Do you want do ther diagnosis? If so press i If you want to use the BMI calcualtor, press k")
 if start == "k":
   H = float(input("Enter your Height in M: "))
@@ -44,12 +46,15 @@ if start == "k":
   elif (W/H**2)>30:
     print("you are obese")
 elif start == "i":
+  #fake temp for testing
   temperature = 37
   temperature = round(temperature, 1)
   print(temperature)
 #this can be changed as needed for debugging
+  #if below 35 degrees
   if(temperature <= 35):
     print("hypothermia")
+    #if above or equal to 36.5 and below or equal to 37.5 degrees
   elif(temperature >= 36.5 and temperature <= 37.5):
     print("normal, no fever")
     ans1 = input("Do you feel fatigued or nauseous? ")
@@ -65,6 +70,7 @@ elif start == "i":
         print("You most likely have food allergies. \n Common symptom include, stomach aches, wheezing, tightness of chest, hives and a swollen body. \n Use antihistamine drugs against mild reactions, severe reactions require an epipen as well as hospital care as soon as possible.")
       elif ans3.lower() == "no":
         print("You most likely have Pink Eye/Conjunctivitis. Common symptoms include, a red/pink eye, increased tear production, itchy eyes and discharge or crusting of the eyes. \n Most of the time, it will go away on its own. If you wear contacts, stop for a small period of time as this will slow recovery.")
+  #if temp is above 37.5 and below 40 degrees
   elif(temperature > 37.5 and temperature < 40):
     print("fever")
     ans1 = input("Do you experience pain/aches in your ears, muscles or joints? ")
@@ -100,7 +106,7 @@ elif start == "i":
                 print("You most likely have TB.\n Can spread when an infected person coughs or sneezes.\n Symptoms do not occur immediately, symptoms include a cough (sometimes blood-tinged), weight loss, night sweats and fever.\n If you suspect you have TB, go see a doctor to aquire swift medical assistance.")
             elif ans8.lower() == "no":
                 print("You most likely have Coronavirus.\n Most people with Covid will experience mild to moderate symptoms, these include fever, dry cough, tiredness.\n Most people who have Covid will recover without special treatment. However it is heavily advised that you get tested as soon as possible and follow the governments decision.")
- 
+#if temp is above or equal to 40 degrees 
 elif(temperature >= 40):
     print("hyperpyrexia")
 
@@ -122,11 +128,4 @@ elif(temperature >= 40):
 # hypothermia - temperature
 # hyperpyrexia - temperature
 
-#def getTemp():
-    #arduino temp module
 
-#user inputs here
-
-#if loop tree here
-
-#output here
