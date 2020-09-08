@@ -1,7 +1,7 @@
 #from tkinter import *
 #from tkinter import ttk
 #A module that encapsulates the access to the serial port which allows us to use the arduino.
-import serial
+#import serial
 
 #root = Tk()
 #root.title("Med Software V0.0")
@@ -29,21 +29,22 @@ import serial
 # !! ditched tk gui code, not working properly. will fix if time allows.
 
 # GET TEMP FROM ARDUINO
+
 # temperature = serial.Serial('com6',9600)
 # change COM port as needed
 
 #start, pick which option the user wants. I for the diagnosis and k for a BMI calculator.
-start = input("Do you want do ther diagnosis? If so press i If you want to use the BMI calcualtor, press k")
+start = input("Do you want do the diagnosis?\n If so, press i.\n If you want to use the BMI calcualtor, press k.\n")
 if start == "k":
   H = float(input("Enter your Height in M: "))
   W = float(input("Enter your Weight in KG: "))
-  if (W/H**2)<18.5:
+  if (W/H**2)>18.5:
     print("you are underweight")
   elif (W/H**2)>18.5 and (W/H**2)<25:
     print("you are normal")
   elif (W/H**2)>25 and (W/H**2)<30:
     print("you are overweight")
-  elif (W/H**2)>30:
+  elif (W/H**2)<30:
     print("you are obese")
 elif start == "i":
   #fake temp for testing
@@ -67,7 +68,7 @@ elif start == "i":
     elif ans1.lower() == "no":
       ans3 = input("Do you have hives or a swollen lip, tongue or face? ")
       if ans3.lower() == "yes":
-        print("You most likely have food allergies. \n Common symptom include, stomach aches, wheezing, tightness of chest, hives and a swollen body. \n Use antihistamine drugs against mild reactions, severe reactions require an epipen as well as hospital care as soon as possible.")
+        print("You most likely have food allergies. \n Common symptoms include, stomach aches, wheezing, tightness of chest, hives and a swollen body. \n Use antihistamine drugs against mild reactions, severe reactions require an epipen as well as hospital care as soon as possible.")
       elif ans3.lower() == "no":
         print("You most likely have Pink Eye/Conjunctivitis. Common symptoms include, a red/pink eye, increased tear production, itchy eyes and discharge or crusting of the eyes. \n Most of the time, it will go away on its own. If you wear contacts, stop for a small period of time as this will slow recovery.")
   #if temp is above 37.5 and below 40 degrees
